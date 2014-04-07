@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: helvetica, serif;
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	background: #009d9e;
+}
+
+nav {
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	padding-top: 33px;
+	font-size: 12px;
+	z-index: 999;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.logo {
+	position: fixed;
+	top: 90px;
+	width: 100%;
+	text-align: center;
+	z-index: 998;
+}
+
+.foam {
+	/*background: url(images/foam.jpg) no-repeat center center;
+	background-size: cover;*/
+	background-color: black;
+	height: 304px;
+	width: 100%;
+}
+
+.anchor {
+	background: url(images/anchor.jpg) no-repeat bottom center;
+	background-size: cover;
+	height: 883px;
+	width: 100%;
+	position: relative;
+	z-index: 10;
+}
+
+.raise-anchor {
+	width: 100%;
+	position: fixed;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 8px;
+}
+
+.anchor-and-pint {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	margin-top: -2px;
+	display: none;
+}
+
+.beer {
+	background: url(images/beer.png) no-repeat bottom center #009d9e;
+	background-size: contain;
+	height: 960px;
+	width: 100%;
+	margin: 0 auto;
+	background-position-y: 50px; 
+}
+
+.pint-copy {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 389px;
+}
+
+.trowel {
+	margin-top: 33px;
+}
+
+.hidden {
+	display: none;
+}
+
+.visable {
+	display: block;
+}
+
+/* iPad Portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+.beer {
+	width: 100%;
+	background-size: auto;
+	margin-bottom: 118px;
+	background-position-y: 0; 
+}
+
+.raise-anchor {
+	margin-top: 105px;
+}
+
+ }
+
+/* iPad Landscape */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+
+.beer {
+	background-position-y: 150px;
+}
+
+.raise-anchor {
+	margin-top: 30px;
+}
+
+.foam {
+	height: 264px;
+}
+
+.logo {
+	top: 50px;
+}
+
+nav {
+	padding-top: 13px;
+}
+
+}
